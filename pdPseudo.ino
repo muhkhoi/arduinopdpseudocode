@@ -17,7 +17,7 @@ void loop() {
 void serialEvent() {
   //baca nilai sudut dari serial
   while (Serial.available()) {
-    int destDeg = Serial.parseInt();
+    destDeg = Serial.parseInt();
     Serial.println(destDeg);
   }
 }
